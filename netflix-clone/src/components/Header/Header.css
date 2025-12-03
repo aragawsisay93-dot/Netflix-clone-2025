@@ -1,0 +1,76 @@
+/* HEADER CONTAINER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; /* Netflix style horizontal padding */
+  height: 70px;
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* LOGO */
+.logo {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* LEFT MENU */
+.nav-left ul {
+  display: flex;
+  gap: 25px; /* spacing between menu items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-left li {
+  cursor: pointer;
+  font-weight: 500; /* Medium weight like Netflix menu */
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-left li:hover {
+  color: #b3b3b3; /* Netflix subtle hover effect */
+}
+
+/* RIGHT MENU */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ICONS */
+.nav-right .search-icon,
+.nav-right .notification-icon,
+.nav-right .account-icon {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-right .search-icon:hover,
+.nav-right .notification-icon:hover,
+.nav-right .account-icon:hover {
+  color: #b3b3b3;
+}
+
+/* SIGN IN BUTTON */
+.signin-btn {
+  background-color: #e50914; /* Netflix red */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signin-btn:hover {
+  background-color: #f40612;
+}
