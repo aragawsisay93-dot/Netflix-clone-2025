@@ -3,16 +3,13 @@
 import React, { useEffect, useState } from "react";
 import axiosInstance from "../../Utils/Axios";
 import MovieTrailer from "../../MovieTrailer/MovieTrailer";
-import ThumbUpAltOutlinedIcon from "@mui/icons-material/ThumbUpAltOutlined";
-import AddIcon from "@mui/icons-material/Add";
-import CheckIcon from "@mui/icons-material/Check";
 import { useNetflix } from "../../../context/NetflixContext";
 import "./Row.css";
 
 function Row({ title, fetchUrl, isLarge }) {
   const [movies, setMovies] = useState([]);
   const [trailerId, setTrailerId] = useState(null);
-  const { likes, toggleLike, myList, toggleMyList } = useNetflix();
+ 
 
 
   // Fetch movies from TMDB
