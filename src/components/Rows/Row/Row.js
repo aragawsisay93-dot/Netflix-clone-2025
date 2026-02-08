@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from "react";
 import axiosInstance from "../../Utils/Axios";
 import MovieTrailer from "../../MovieTrailer/MovieTrailer";
-import { useNetflix } from "../../../context/NetflixContext";
 import "./Row.css";
+
 
 function Row({ title, fetchUrl, isLarge }) {
   const [movies, setMovies] = useState([]);
