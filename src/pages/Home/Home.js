@@ -6,13 +6,7 @@ import RowList from "../../components/Rows/RowList/RowList";
 
 const Home = ()=>{
     return (
-      // <>
-      //   <Header />
-      //   <Banner />
-      //   <RowList />
-      //   <Footer />
-      // </>
-
+     
       <>
         <Header />
         <div style={{ paddingTop: "68px" }}>
